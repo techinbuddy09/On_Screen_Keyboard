@@ -1,0 +1,57 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.keyboard {
+    display: inline-block;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.key-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.key {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.key.wide-key {
+    flex: 1;
+}
+
+.key.extra-wide-key {
+    flex: 2;
+}
+
+.key:hover {
+    background-color: #777;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.key:active {
+    background-color: yellow;
+    color: black;
+    transform: scale(0.95);
+}
